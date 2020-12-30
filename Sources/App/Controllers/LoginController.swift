@@ -17,6 +17,7 @@ class LoginController {
         }
         print(body.username)
         let userRequest = LoginRequest()
+        
         if body.username == userRequest.username && body.password == userRequest.password {
             response = LoginResponse(
                 result: 1,
