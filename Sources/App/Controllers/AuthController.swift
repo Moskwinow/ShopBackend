@@ -8,6 +8,7 @@
 import Vapor
 
 class AuthController {
+    
     func register(_ req: Request)  throws -> EventLoopFuture<RegisterResponse> {
         guard let body = try? req.content.decode(RegisterRequest.self) else {
                     throw Abort(.badRequest)
