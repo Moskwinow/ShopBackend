@@ -9,7 +9,7 @@ import Vapor
 
 class AddToBasketController {
     func addToBuscket(_ req: Request)  throws -> EventLoopFuture<AddBuscketResponse> {
-        guard let body = try? req.content.decode([AddBuscketRequest].self) else {
+        guard let body = try? req.content.decode(AddBuscketRequest.self) else {
             throw Abort(.badRequest)
         }
         
