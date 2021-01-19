@@ -8,7 +8,7 @@
 import Vapor
 
 struct  AddBuscketRequest: Content {
-    var productName: String
+    var product_name: String
     var amount: Int
     var quantity: Int
 }
