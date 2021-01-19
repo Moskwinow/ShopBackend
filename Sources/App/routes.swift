@@ -6,5 +6,9 @@ func routes(_ app: Application) throws {
     
     let loginController = LoginController()
     app.post("login", use: loginController.login)
+    
+    let addToBasketController = AddToBasketController()
+    app.post("addToBasket", use: addToBasketController.addToBuscket)
+    
 
 }
