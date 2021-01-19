@@ -18,5 +18,5 @@ class AddToBasketController {
         return req.eventLoop.future(response)
         
     }
-    }
+}
 

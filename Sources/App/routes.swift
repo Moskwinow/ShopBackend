@@ -8,7 +8,7 @@ func routes(_ app: Application) throws {
     app.post("login", use: loginController.login)
     
     let addToBasketController = AddToBasketController()
-    app.post("addToBasket", use: addToBasketController.addToBuscket)
+    app.post("add", use: addToBasketController.addToBuscket)
     
 
 }
